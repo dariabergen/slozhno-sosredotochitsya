@@ -1,44 +1,25 @@
 .page.theme_light {
-  --bg-color: #fff1f7;
-  --bg-title-color: #ff8dcb;
-  --main-title-text-color: #ffc2e6;
-  --main-title-accent-text-color: #ff0070;
-  --section-title-text-color: #353430;
-  --sub-title-text-color: #353430;
-  --text-color: #353430;
-  --main-font: 'IBM Plex mono';
-  --decor-color: #353430;
-  --buttom-color: #353430;
-  --buttom-hover-color: #32312d66;
-  --link-accent-color: #ff8dcb;
-  background-image: url(../images/cover-image-light.png);
-}
-
-.theme_light .decor {
-  display: none;
+  --text-color: var(--color-black-2, #353430);
+  --accent-color: var(--color-pink-4, #ff8dcb);
+  --brand-color: var(--color-pink-3, #ffc2e6);
+  --highlight-color: var(--color-black-2, #353430);
+  --secondary-color: var(--color-black-2, #353430);
+  --secondary-color-o-40: var(--color-black-2-o-40, #35343040);
+  --page-background-color: var(--color-pink-1, #fff1f7);
+  --page-background-image: url("../images/cover-image-light.png");
+  --rec-decor-visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #fff1f7;
-    --bg-title-color: #ff8dcb;
-    --main-title-text-color: #ffc2e6;
-    --main-title-accent-text-color: #ff0070;
-    --section-title-text-color: #353430;
-    --sub-title-text-color: #353430;
-    --text-color: #353430;
-    --main-font: 'IBM Plex mono';
-    --decor-color: #353430;
-    --buttom-color: #353430;
-    --buttom-hover-color: #32312d66;
-    --link-accent-color: #ff8dcb;
-  }
-
-  .page {
-    background-image: url(../images/cover-image-light.png);
-  }
-
-  .decor {
-    display: none;
+  --text-color: var(--color-black-2, #353430);
+  --accent-color: var(--color-pink-4, #ff8dcb);
+  --brand-color: var(--color-pink-3, #ffc2e6);
+  --highlight-color: var(--color-black-2, #353430);
+  --secondary-color: var(--color-black-2, #353430);
+  --secondary-color-o-40: var(--color-black-2-o-40, #35343040);
+  --page-background-color: var(--color-pink-1, #fff1f7);
+  --page-background-image: url("../images/cover-image-light.png");
+  --rec-decor-visibility: hidden;
   }
 }

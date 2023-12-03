@@ -17,7 +17,9 @@
 .cover {
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
+  
 }
 
 .decorated-zone::before,
@@ -58,6 +60,7 @@
   content: "REC";
   color: var(--accent-color, #ff0070);
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .decor::after {
@@ -152,6 +155,10 @@
   line-height: inherit;
 }
 
+.titleforlist{
+  font-weight: 400; 
+}
+
 .title-decor {
   color: var(--highlight-color, #000028);
   background: var(--accent-color, #ff0070);
@@ -202,7 +209,7 @@ img {
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid;
 }
 
 .link:focus {
@@ -224,8 +231,7 @@ img {
   }
 
   .header__theme-menu {
-    margin-block-start: 170px;
-    margin-block-end: 70px;
+    margin-top: max(170px, 5vw);
   }
 
   .header__text {
@@ -285,7 +291,7 @@ img {
     justify-self: center;
     margin-inline-start: 20px;
     margin-block-start: 0;
-    margin-block-end: 215px;
+    min-block-size: 180px;
   }
 
   .header__theme-menu-list {
@@ -300,4 +306,3 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
